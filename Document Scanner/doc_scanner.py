@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def get_perspective_transform(image, corners):
-    """Creates a top-down view of the document."""
+    """Creates top-down view."""
     rect = np.zeros((4, 2), dtype="float32")
     s = corners.sum(axis=1)
     rect[0] = corners[np.argmin(s)]
@@ -30,7 +30,7 @@ def get_perspective_transform(image, corners):
     warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
     return warped
 
-# Load the image
+# Load image
 image = cv2.imread('document.jpg')
 orig = image.copy()
 
@@ -39,7 +39,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 edged = cv2.Canny(blurred, 25, 100)
 
-# Find the largest 4-sided contour
+# Find largest 4-sided contour
 contours, _ = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 contours = sorted(contours, key=cv2.contourArea, reverse=True)[:5]
 screenCnt = None

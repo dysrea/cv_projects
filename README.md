@@ -8,7 +8,7 @@ This repository contains several Python projects demonstrating key concepts in c
 2.  **Document Scanner**: Scans a document from an image, correcting for perspective to create a top-down view. (Wide scope of improvement)
 3.  **Face & Eye Detector**: Uses Haar Cascades to detect human faces and eyes in real-time. (As of now, only detects front face)
 4.  **Image Stitcher**: Stitches multiple overlapping images together to create a wide panoramic view.
-5.  **Motion Detector**: A real-time motion detection system built with Python and OpenCV. This application monitors a live webcam feed to identify and highlight moving objects by drawing a bounding box around them.
+5.  **Motion Detector**: A real-time motion detection system built with Python and OpenCV. This application monitors a live webcam feed to identify and highlight moving objects by drawing a bounding box around them. (Scope of improvement)
 ## How to Run
 1. Clone the repository.
 2. Install the required libraries: `pip install opencv-contrib-python numpy`
