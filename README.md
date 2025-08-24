@@ -1,8 +1,4 @@
-# My Computer Vision Projects
-
-This repository contains several Python projects demonstrating key concepts in computer vision using OpenCV.
-
-## Projects
+# Computer Vision Projects
 
 1.  **Color Tracker**: A real-time script to track objects based on their color in a live webcam feed.
 2.  **Document Scanner**: Scans a document from an image, correcting for perspective to create a top-down view. (Wide scope of improvement)
