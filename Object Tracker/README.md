@@ -31,3 +31,4 @@ A Python project to detect, track, and compare the performance of multiple state
     ```bash
     python tracker.py
     ```
+    Output videos will be stored in cv_projects/run/ (too large to upload on github)
