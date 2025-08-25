@@ -15,8 +15,8 @@ A Python project to detect, track, and compare the performance of multiple state
 ## Quick Start
 1.  **Clone & Setup Environment:**
     ```bash
-    git clone [https://github.com/dysrea/cv_projects.git](https://github.com/dysrea/cv_projects.git)
-    cd cv_projects
+    git clone https://github.com/dysrea/cv_projects.git
+    cd cv_projects/'Object Tracker'
     python -m venv venv
     .\venv\Scripts\Activate.ps1
     ```
